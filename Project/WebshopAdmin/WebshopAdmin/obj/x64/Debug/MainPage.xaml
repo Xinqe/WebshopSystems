@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="WebshopAdmin.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WebshopAdmin"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Windows10version1803="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 6)"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+   >
+
+
+    <StackPanel Orientation="Horizontal">
+        <!--<StackPanel Orientation="Horizontal">-->
+
+        <NavigationView x:ConnectionId='2' 
+            IsBackEnabled="False" 
+            IsBackButtonVisible="Collapsed"
+            IsSettingsVisible="False"
+            IsPaneOpen="True" 
+            Margin="0,0,154,0"
+            x:Name="NavBar"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+                                  
+                                                      
+                                            >
+
+
+
+            <NavigationView.MenuItems>
+                <NavigationViewItem  Tag="ViewHome" Icon="Home">
+                    <TextBlock Tag="NavHome">Home</TextBlock>
+                </NavigationViewItem>
+
+                <NavigationViewItemHeader Content="Products"/>
+                <NavigationViewItem  Tag="ViewProductPage" Icon="Shop">
+                    <TextBlock Tag="NavProducts">View Products</TextBlock>
+                </NavigationViewItem>
+
+
+                <NavigationViewItemHeader Content="Account"/>
+                <NavigationViewItem   Tag="ViewAccountPage" Icon="Account">
+                    <TextBlock Tag="NavAccounts">View Accounts</TextBlock>
+                </NavigationViewItem>
+
+
+                <NavigationViewItemHeader Content="Orders"/>
+                <NavigationViewItem   Tag="ViewOrderPage" Icon="Page2">
+                    <TextBlock Tag="NavOrders">View Orders</TextBlock>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+
+            <Frame x:ConnectionId='3' x:Name="contentFrame" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"/>
+        </NavigationView>
+        <!--</StackPanel>-->
+    </StackPanel>
+</Page>
+

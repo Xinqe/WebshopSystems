@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="WebshopAdmin.Views.Accounts.CreateAccountView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WebshopAdmin.Views.Accounts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <ScrollViewer>
+        <StackPanel Orientation="Vertical">
+
+        <StackPanel Orientation="Horizontal" Margin="40">
+
+            <TextBlock  Text="Create Account"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" Margin="40, 0, 40, 10">
+            <TextBlock  Text="Username: " VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        </StackPanel>
+
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="40,0,0,10"  PlaceholderText="input Username"  Width="240" Name="txtUsername" />
+
+        <StackPanel Orientation="Horizontal" Margin="40, 0, 40, 10">
+            <TextBlock Text="Password: " VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </StackPanel>
+
+        <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Center" Margin="40,0,0,10"   PlaceholderText="input Password"  Width="350"  Name="psw" />
+
+        <StackPanel Orientation="Horizontal" Margin="40, 0, 40, 10">
+            <TextBlock Text="Confirm password: " VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </StackPanel>
+
+        <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Center" Margin="40,0,0,0"   PlaceholderText="input Password"  Width="350"  Name="pswconfirm" />
+
+
+
+        <StackPanel Orientation="Horizontal" Margin="40, 0, 40, 40">
+            <Button  VerticalAlignment="Center" HorizontalAlignment="Center" Content="Cancel" Name="btnCancelCreateAccount" Click="btnCancelCreateAccount_Click"/>
+            <Button  VerticalAlignment="Center" HorizontalAlignment="Center" Content="Create"  Margin="20" Name="btnCreateAccount" Click="btnCreateAccount_ClickAsync" />
+        </StackPanel>
+
+
+    </StackPanel>
+    </ScrollViewer>
+</Page>

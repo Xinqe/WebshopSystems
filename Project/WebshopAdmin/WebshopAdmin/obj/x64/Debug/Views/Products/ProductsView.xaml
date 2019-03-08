@@ -1,0 +1,73 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="WebshopAdmin.Views.ProductsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WebshopAdmin.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    xmlns:data="using:WebshopAdmin.Model">
+
+    <StackPanel Orientation="Vertical">
+        
+        <TextBlock Text="Products" />
+        <Button x:ConnectionId='2' Content="Create Product"                                Name="btnProductCreate" HorizontalAlignment="Right"/>
+
+        <ListView x:ConnectionId='3' Name="ProductList"                             Width="Auto" Height="Auto"
+                         ScrollViewer.HorizontalScrollMode="Enabled" 
+          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+          ScrollViewer.VerticalScrollMode="Disabled"
+          ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                                                                    >
+            <ListView.HeaderTemplate>
+                <DataTemplate                          >
+                    <Grid Padding="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition MinWidth="40"/>
+                            <ColumnDefinition MinWidth="100"/>
+                            <ColumnDefinition MinWidth="260"/>
+                            <ColumnDefinition MinWidth="60"/>
+                            <!--<ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>-->
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="ID" />
+                        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="Name" />
+                        <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="Description" />
+                        <TextBlock Grid.Column="3" VerticalAlignment="Center" Text="Price" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.HeaderTemplate>
+            
+            <ListView.ItemTemplate>
+                <DataTemplate                          >
+                    <Grid x:ConnectionId='5'>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition MinWidth="40"/>
+                            <ColumnDefinition MinWidth="100"/>
+                            <ColumnDefinition MinWidth="260"/>
+                            <ColumnDefinition MinWidth="60"/>
+                            <!--<ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>-->
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock x:ConnectionId='6' Grid.Column="0" VerticalAlignment="Center"                   />
+                        <TextBlock x:ConnectionId='7' Grid.Column="1" VerticalAlignment="Center"                       />
+                        <TextBlock x:ConnectionId='8' Grid.Column="2" VerticalAlignment="Center"                            />
+                        <TextBlock x:ConnectionId='9' Grid.Column="3" VerticalAlignment="Center"                      />
+
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            
+    </StackPanel>
+</Page>
+

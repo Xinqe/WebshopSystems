@@ -1,0 +1,118 @@
+﻿<Page
+    x:Class="WebshopAdmin.Views.Orders.UpdateDeleteOrderView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WebshopAdmin.Views.Orders"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    xmlns:data="using:WebshopAdmin.Model">
+
+    <ScrollViewer>
+        <StackPanel Orientation="Vertical">
+
+        <StackPanel Orientation="Horizontal" Margin="40">
+
+            <TextBlock  Text="Configure Order"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="40, 0, 40, 10">
+
+            <TextBlock  Text="Customer: " Margin="0, 0, 0, 5"/>
+            <TextBlock  Text="{x:Bind selectedCombinedOrder.account.Username}" Margin="0, 0, 0, 5"/>
+
+            <TextBlock  Text="Order ID: " Margin="0, 0, 0, 5"/>
+            <TextBlock  Text="{x:Bind selectedCombinedOrder.order.ID}" Margin="0, 0, 0, 5"/>
+            <TextBlock  Text="Order date: " Margin="0, 0, 0, 5"/>
+            <TextBlock  Text="{x:Bind selectedCombinedOrder.order.OrderDate}" Margin="0, 0, 0, 5"/>
+            <TextBlock  Text="Order status: " Margin="0, 0, 0, 5"/>
+            <TextBox  Text="{x:Bind selectedCombinedOrder.order.Status , Mode=TwoWay}" Margin="0, 0, 0, 5"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" Margin="40, 0, 40, 10">
+            <TextBlock Text="Products: " VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </StackPanel> 
+
+
+
+        <ListView Name="ProductList" ItemsSource="{x:Bind productData}" Width="Auto" Height="Auto"
+                         ScrollViewer.HorizontalScrollMode="Enabled" 
+          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+          ScrollViewer.VerticalScrollMode="Disabled"
+          ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                Margin="40, 0, 40, 0" >
+            <ListView.HeaderTemplate>
+                <DataTemplate x:DataType="data:ProductPresenter">
+                    <Grid Padding="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition MinWidth="40"/>
+                            <ColumnDefinition MinWidth="100"/>
+                            <ColumnDefinition MinWidth="260"/>
+                            <ColumnDefinition MinWidth="60"/>
+                            <ColumnDefinition MinWidth="60"/>
+                            <ColumnDefinition MinWidth="60" />
+                            <!--<ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>-->
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="ID" />
+                        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="Name" />
+                        <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="Description" />
+                        <TextBlock Grid.Column="3" VerticalAlignment="Center" Text="Price" />
+                        <TextBlock Grid.Column="4" VerticalAlignment="Center" Text="Quantity" />
+                        <TextBlock Grid.Column="5" VerticalAlignment="Center" Text=""     Margin="15, 0 , 0 , 0"/>
+                    
+                    </Grid>
+                </DataTemplate>
+            </ListView.HeaderTemplate>
+
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="data:ProductPresenter">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition MinWidth="40"/>
+                            <ColumnDefinition MinWidth="100"/>
+                            <ColumnDefinition MinWidth="260"/>
+                            <ColumnDefinition MinWidth="60"/>
+                            <ColumnDefinition MinWidth="60"/>
+                            <ColumnDefinition MinWidth="60"/>
+                            <!--<ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>-->
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="{x:Bind ID}"/>
+                        <TextBlock Grid.Column="1" VerticalAlignment="Center"  Text="{x:Bind Name}" />
+                        <TextBlock Grid.Column="2" VerticalAlignment="Center" Text="{x:Bind Description}"/>
+                        <TextBlock Grid.Column="3" VerticalAlignment="Center" Text="{x:Bind Price}"/>
+                        <TextBox Grid.Column="4" VerticalAlignment="Center" Text="{x:Bind Quantity, Mode=TwoWay}" />
+                        <Button Grid.Column="5" Name="btnDeleteProductFromOrder" Click="btnDeleteProductFromOrder_Click" Content="Delete" Margin="15, 0 , 0 , 0" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackPanel Orientation="Horizontal" Margin="40, 20, 40, 10">
+
+            <TextBlock  Text="Total Sum:  " Margin="0, 0, 0, 5"/>
+            <TextBlock  Text="{x:Bind Ordersum}" Margin="5, 0, 0, 5"/>
+
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="40, 0, 40, 40">
+            <Button  VerticalAlignment="Center" HorizontalAlignment="Center" Content="Cancel" Name="btnCancelUpdateOrder"  Click="btnCancelUpdateOrder_Click"/>
+            <Button  VerticalAlignment="Center" HorizontalAlignment="Center" Content="Update"  Margin="20" Name="btnUpdateOrder" Click="btnUpdateOrder_Click" />
+            <Button  VerticalAlignment="Center" HorizontalAlignment="Center" Content="Delete"   Name="btnDeleteOrder"  Click="btnDeleteOrder_Click"/>
+        </StackPanel>
+
+
+    </StackPanel>
+    </ScrollViewer>
+</Page>
