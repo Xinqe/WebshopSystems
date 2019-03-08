@@ -1,0 +1,14 @@
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\bin\Debug\DataReaderTester.exe.config
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\bin\Debug\DataReaderTester.exe
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\bin\Debug\DataReaderTester.pdb
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\bin\Debug\EntityFramework.dll
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\bin\Debug\EntityFramework.xml
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\obj\Debug\DataReaderTester.csprojAssemblyReference.cache
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\obj\Debug\DataReaderTester.csproj.CoreCompileInputs.cache
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\obj\Debug\DataReaderTester.csproj.CopyComplete
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\obj\Debug\DataReaderTester.exe
+C:\Users\Robys\source\repos\WebshopWindowsService\DataReaderTester\obj\Debug\DataReaderTester.pdb

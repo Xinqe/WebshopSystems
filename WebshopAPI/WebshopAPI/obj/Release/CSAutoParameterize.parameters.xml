@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="WebshopModel-Web.config Connection String" description="WebshopModel Connection String used in web.config by the application to access the database." defaultValue="data source=webbshopserver.database.windows.net;initial catalog=WebshopDB;user id=Xinqe;password=Admin2117;multipleactiveresultsets=True;application name=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Robys\\source\\repos\\WebshopAPI\\WebshopAPI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WebshopModel']/@connectionString" />
+  </parameter>
+</parameters>

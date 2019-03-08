@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Deluxe Soap",
+    "Description": "A very expensive soap",
+    "Price": 500
+  },
+  {
+    "Name": "Banana",
+    "Description": "A magical banana",
+    "Price": 50
+  }
+
+]

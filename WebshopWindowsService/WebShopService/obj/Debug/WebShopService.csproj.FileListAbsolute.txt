@@ -1,0 +1,16 @@
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\bin\Debug\WebShopService.exe.config
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\bin\Debug\WebShopService.exe
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\bin\Debug\WebShopService.pdb
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\bin\Debug\EntityFramework.dll
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\bin\Debug\EntityFramework.xml
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\obj\Debug\WebShopService.csprojAssemblyReference.cache
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\obj\Debug\WebShopService.ProjectInstaller.resources
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\obj\Debug\WebShopService.csproj.GenerateResource.cache
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\obj\Debug\WebShopService.csproj.CoreCompileInputs.cache
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\obj\Debug\WebShopService.csproj.CopyComplete
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\obj\Debug\WebShopService.exe
+C:\Users\Robys\source\repos\WebshopWindowsService\WebShopService\obj\Debug\WebShopService.pdb
